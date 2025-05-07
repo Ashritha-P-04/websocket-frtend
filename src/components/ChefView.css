@@ -1,0 +1,72 @@
+/* Main container */
+.chef-dashboard {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Headings */
+  .chef-dashboard h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #343a40;
+  }
+  
+  /* Card customization */
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card-header {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  /* Order list items */
+  .list-group-item {
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .list-group-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Order ID and badge */
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .order-header h6 {
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+  
+  .badge {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+  
+  /* Pizza item list */
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    font-size: 0.95rem;
+  }
+  
+  /* Button styling */
+  .btn {
+    margin-top: 10px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
