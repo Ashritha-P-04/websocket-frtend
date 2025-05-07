@@ -5,11 +5,11 @@ import apiService from '../services/apiService';
 import './Customer.css'
 
 const PIZZA_TYPES = [
-  { id: 'margherita', name: 'Margherita', price: 8.99 },
-  { id: 'pepperoni', name: 'Pepperoni', price: 10.99 },
-  { id: 'vegetarian', name: 'Vegetarian', price: 9.99 },
-  { id: 'hawaiian', name: 'Hawaiian', price: 11.99 },
-  { id: 'supreme', name: 'Supreme', price: 12.99 }
+  { id: 'margherita', name: 'Margherita', price: 200 },
+  { id: 'pepperoni', name: 'Pepperoni', price: 250 },
+  { id: 'vegetarian', name: 'Vegetarian', price: 299 },
+  { id: 'hawaiian', name: 'Hawaiian', price: 199 },
+  { id: 'supreme', name: 'Supreme', price: 399 }
 ];
 
 const PIZZA_SIZES = [
@@ -153,7 +153,7 @@ const CustomerView = () => {
                   >
                     {PIZZA_TYPES.map(type => (
                       <option key={type.id} value={type.id}>
-                        {type.name} (${type.price})
+                        {type.name} (Rs{type.price})
                       </option>
                     ))}
                   </Form.Select>
@@ -204,7 +204,7 @@ const CustomerView = () => {
                           {item.quantity} x {item.size} {item.type}
                         </div>
                         <div>
-                          ${item.price.toFixed(2)}
+                          Rs{item.price.toFixed(2)}
                           <Button 
                             variant="danger" 
                             size="sm" 
@@ -220,7 +220,7 @@ const CustomerView = () => {
                   
                   <div className="d-flex justify-content-between mb-3">
                     <h5>Total:</h5>
-                    <h5>${calculateTotal()}</h5>
+                    <h5>Rs{calculateTotal()}</h5>
                   </div>
                   
                   <Button variant="success" onClick={placeOrder} className="w-100">
@@ -257,7 +257,7 @@ const CustomerView = () => {
                           </li>
                         ))}
                       </ul>
-                      <p className="mb-0">Total: ${order.totalPrice.toFixed(2)}</p>
+                      <p className="mb-0">Total: Rs{order.totalPrice.toFixed(2)}</p>
                     </ListGroup.Item>
                   ))}
                 </ListGroup>
