@@ -1,0 +1,102 @@
+/* Footer.css */
+
+.pizzahub-footer {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+    padding-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .pizzahub-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .pizzahub-footer-logo {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+  }
+  
+  .pizzahub-footer-logo .logo {
+    display: inline-block;
+    font-size: 28px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .pizzahub-logo-text {
+    font-weight: bold;
+  }
+  
+  .pizzahub-logo-accent {
+    color: #ff4d00;
+    font-weight: bold;
+  }
+  
+  .pizzahub-footer-tagline {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ccc;
+  }
+  
+  .pizzahub-footer-links {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .pizzahub-footer-section {
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .pizzahub-footer-heading {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ff4d00;
+  }
+  
+  .pizzahub-footer-menu,
+  .pizzahub-footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pizzahub-footer-menu li,
+  .pizzahub-footer-contact li {
+    margin-bottom: 8px;
+  }
+  
+  .pizzahub-footer-menu a {
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .pizzahub-footer-menu a:hover {
+    color: #ff4d00;
+  }
+  
+  .pizzahub-footer-contact i {
+    margin-right: 8px;
+    color: #ff4d00;
+  }
+  
+  .pizzahub-footer-contact span {
+    vertical-align: middle;
+  }
+  
+  .pizzahub-footer-bottom {
+    background-color: #141414;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+  }

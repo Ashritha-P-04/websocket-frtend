@@ -5,6 +5,8 @@ import './App.css';
 import CustomerView from './components/CustomerView';
 import ChefView from './components/ChefView';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import Home from './components/Home/Main';
+import Footer from './components/Home/Footer';
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
-                <Nav.Link as={Link} to="/">Customer</Nav.Link>
+                <Nav.Link as={Link} to="/customer">Customer</Nav.Link>
                 <Nav.Link as={Link} to="/chef">Chef</Nav.Link>
+                
+
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -25,8 +29,12 @@ function App() {
 
         <Container className="mt-4">
           <Routes>
-            <Route path="/" element={<CustomerView />} />
+            <Route path="/" element={<Home />} />
             <Route path="/chef" element={<ChefView />} />
+            <Route path="/customer" element={<CustomerView />} />
+           
+
+
           </Routes>
         </Container>
       </div>
